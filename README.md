@@ -11,7 +11,7 @@ You can checkout the demo here : <strong><a href="https://gustavomatsunaga.githu
 
 ## Challenges! :pushpin:
 
-The application was developed by consuming an API. It generates all the countries and display their names, flags and languages, you can filter them, mark as favorite, filter only the favorites, filter by name. In order to achive the features it was used ES6 to make the application more efficient. The whole application is responsive, so you either use it on a mobile or desktop.
+The application was developed by consuming an API. It generates all the countries and displays their names, flags, and languages, you can filter them, mark as favorite, filter only the favorites, filter by name. In order to achieve the features, it was used ES6 to make the application more efficient. The whole application is responsive, so you either use it on a mobile or desktop.
 
 **Features! Let's have fun!** 🚀
 
