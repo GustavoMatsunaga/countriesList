@@ -1,0 +1,149 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(92deg, #a8a8ee, #080829);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#container {
+  width: 90vw;
+  max-width: 960px; }
+
+header h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 3rem; }
+header .filter-by-name {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  border: 1px solid #d0d0d0;
+  margin-bottom: 1rem;
+  outline: none; }
+header .filter-by-language {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2rem; }
+  @media (max-width: 600px) {
+    header .filter-by-language {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 1rem; } }
+  header .filter-by-language label, header .filter-by-language input[type="radio"], header .filter-by-language input[type="checkbox"] {
+    margin-left: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #d0d0d0; }
+    @media (max-width: 600px) {
+      header .filter-by-language label, header .filter-by-language input[type="radio"], header .filter-by-language input[type="checkbox"] {
+        margin: 0; } }
+
+main .found-countries {
+  margin-bottom: 1.5rem;
+  font-size: 2rem; }
+main .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  column-gap: 1rem;
+  row-gap: 1rem; }
+  @media (max-width: 800px) {
+    main .cards {
+      grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) {
+    main .cards {
+      grid-template-columns: 1fr; } }
+main .card {
+  border: 1px solid #d0d0d0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  width: 100%;
+  height: 100%; }
+  main .card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0.5rem 0; }
+    main .card-title-image {
+      width: 30%;
+      height: 60%; }
+    main .card-title h2 {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-left: 1rem; }
+    main .card-title-favorite {
+      margin-left: 1rem;
+      cursor: pointer; }
+  main .card-languages {
+    text-align: center;
+    flex: 1;
+    align-self: center; }
+    main .card-languages p {
+      font-size: 1rem;
+      font-weight: 300;
+      margin: 0.5rem 0; }
+
+.fa.fa-star.checked {
+  color: orange; }
+
+/*# sourceMappingURL=style.css.map */

@@ -4,21 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countries</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
 </head>
 <body>
     <div id="container">
-        <h1>Countries</h1>
-        <input type="text" class="filter-by-name" placeholder="Search by name:">
-        <div class="filter-by-language">
-            <input type="checkbox" name="english" id="filter-by-language-english">
-            <label for="filter-by-language-english">English</label>
-            <input type="checkbox" name="french" id="filter-by-language-french">
-            <label for="filter-by-language-french">French</label>
-            <input type="checkbox" name="portuguese" id="filter-by-language-portuguese">
-            <label for="filter-by-language-portuguese">Portuguese</label>
-        </div>
+        <header>
+            <h1>Countries</h1>
+            <input type="text" class="filter-by-name" placeholder="Search by name:">
+            <div class="filter-by-language">
+                <div class="box">
+                    <input type="radio" checked id="allLang" name="language" value="0">
+                    <label for="allLang" >All</label>
+                </div>
+                <div class="box">
+                    <input type="radio" id="oneLang" name="language" value="1">
+                    <label for="oneLang">One</label>
+                </div>
+                <div class="box">
+                    <input type="radio" id="twoLang" name="language" value="2">
+                    <label for="twoLang">Two</label>
+                </div>
+                <div class="box">
+                    <input type="radio" id="threeLang" name="language" value="3">
+                    <label for="threeLang">Three</label>
+                </div>
+                <div class="box">
+                    <input type="radio" id="fourLang" name="language" value="4">
+                    <label for="fourLang">Four</label>
+                </div>
+                <div class="box">
+                    <input type="radio" id="fiveLang" name="language" value="5">
+                    <label for="fiveLang">Five</label>
+                </div>
+                <div class="box">
+                    <input type="checkbox" name="favorited-box" id="favorited-box">
+                    <label for="favorited-box">Favorites</label>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1 class="found-countries"></h1>
+            <div class="cards">
+            </div>
+        </main>
     </div>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
